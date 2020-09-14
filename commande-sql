@@ -1,0 +1,55 @@
+CREATE TABLE simplons (id INTEGER PRIMARY KEY NOT NULL,
+name TEXT,
+C1 TEXT,
+C2 TEXT,
+C3 TEXT);
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Fatima','Vert', 'Vert','');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Deborah','Vert','Vert','');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Steeven', 'Bleu','Vert','Violet');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Camille', 'Bleu','Vert','Violet');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Maxim', 'Bleu','','');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Chloé', '','Bleu','');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Lucas', '','Bleu','');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Isa', '','','Bleu');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Julie', '','','Bleu');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Voja', '','','Bleu');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Jojo', 'Violet','Violet','Violet');
+
+INSERT INTO simplons (name,C1,C2,C3) VALUES
+('Clement', 'Violet','','');
+
+UPDATE simplons SET
+C1 = 'Vert', C2 = 'Vert', C3 = 'Vert'
+WHERE C1 = 'Bleu';
+
+UPDATE simplons SET
+C2 = 'Vert'
+WHERE C2 = 'Bleu';
+
+UPDATE simplons SET
+C3 = 'Vert'
+WHERE C3 = 'Bleu';
+
+select * from simplons;
